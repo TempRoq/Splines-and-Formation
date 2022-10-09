@@ -6,19 +6,19 @@ Spline path creator and following algorithm that supports formations of objects
 I needed data structure and algorithm that allowed for enemies in different formations to follow a path as seen in shmups like galaga through enemies and touhou through bullets.
 
 This data structure needed to
-> Store a path as concisely as possible
-> Allow for smooth paths to be created
-> Allow for variations of paths to be made as easily as possible
+* Store a path as concisely as possible
+* Allow for smooth paths to be created
+* Allow for variations of paths to be made as easily as possible
 
 THe algorithm needed to allow objects to follow a path
-> by itself
-> around a moving origin
-> at an offset
-  > Speed
-  > Time
-  > Position
-  > Angle
-  > Scale
+* by itself
+* around a moving origin
+* at an offset
+  * Speed
+  * Time
+  * Position
+  * Angle
+  * Scale
 
 I realized very early on that storing a new path for every object that was supposed to follow a path would be ridiculous. Editing levels would be pain if 10 ships in a formation need to have their paths slightly altered. This does not even take into account the amount of data this would use, nor the time it would take to actually set up individual paths for hundreds of enemies and bullets. 
 
